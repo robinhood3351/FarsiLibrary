@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FarsiLibrary.Localization\FarsiLibrary.Localization.csproj" />
+		<ProjectReference Include="..\FarsiLibrary.Utils\FarsiLibrary.Utils.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Themes\Aero.NormalColor.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</None>
+		<None Update="Themes\Generic.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</None>
+	</ItemGroup>
+
+</Project>
